@@ -1,0 +1,19 @@
+{
+  "name": "node-red-contrib-sportNodes",
+  "version": "0.0.1",
+  "description": "A sport nodes for node-red",
+  "dependencies": {
+    "is-utf8": "^0.2.1",
+    "mqtt": "^1.13.0"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "node1": "node1/node1.js",
+      "node2": "node2/node2.js",
+      "node3": "node3/node3.js"
+    }
+  }
+}

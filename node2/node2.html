@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('node2', {
+        category: 'Sport',
+        color: '#AAAA66',
+        defaults: {
+            name: {value: ""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "envelope.png",
+        label: function () {
+            return this.name || "node2";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="node2">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node2.message1"></span></label>
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node2.message2"></span></label>
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="node2">
+    <p>A simple node that converts the message payloads into all node21 characters</p>
+
+</script>

@@ -1,0 +1,28 @@
+<script type="text/x-red" data-template-name="node3">
+    <div class="form-row">
+        <label for="node-config-input-host"><i class="icon-bookmark"></i> Host</label>
+        <input type="text" id="node-config-input-host">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-port"><i class="icon-bookmark"></i> Port</label>
+        <input type="text" id="node-config-input-port">
+    </div>
+
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('node3', {
+        category: 'Sport',
+        color: '#C7E9C0',
+        defaults: {
+            host: {value: "localhost", required: true},
+            port: {value: 1234, required: true, validate: RED.validators.number()},
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "light.png",
+        label: function () {
+            return this.host + ":" + this.port;
+        }
+    });
+</script>
